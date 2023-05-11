@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #2D2D34;
+    font-family: 'Inter';
+    background: #F1E4E8;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    background: #E45779;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px;
+}
+
+#logo {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.navbar-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #2D2D34;
+}
+
+.navbar-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-container {
+    height: 50vh;
+    width: 100vw;
+    background-image: url("./chayanne.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.info-section {
+    padding: 30px;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card-title {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 10px;
+
+}
+
+.card-description {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #E45779;
+}
+
+/*Vista para tablets*/
+@media (min-width: 768px) {
+    .navbar-container {
+        width: 30%;
+    }
+}
+
+/*Vista para escritorio*/
+@media (min-width: 1200px) {
+    .navbar-container {
+        width: 15%;
+    }
+
+    .card-container {
+        display:flex;
+        justify-content: space-between;
+    }
+    .card {
+        margin-right: 20px;
+    }
+}
